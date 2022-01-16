@@ -1,0 +1,244 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.navbar{
+    display: flex;
+    border: 2px solid grey;
+    border-radius: 10px;
+    background-color: rgb(179 201 143);
+    top: 0px;
+    /* position: sticky; */
+}
+
+.item{
+    display: inline-block;
+    box-sizing: border-box;
+    margin: 2px 70px;
+    padding: 19px;
+    font-weight: bold;
+}
+
+.item a{
+    color: brown;
+    text-decoration: none;
+    font-size: 20px;
+}
+.item a:hover{
+    background-color: white;
+    color: brown;
+    border-radius: 4px;
+}
+
+#logo img{
+    display: inline-block;
+    box-sizing: border-box;
+    height: 60px;
+    width: 60px;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 200px;
+    height: 520px;
+}
+
+#intro img{
+    height: 500px;
+    width: auto;
+    z-index: -1;
+}
+
+#home::before{
+    content: "";
+    background: url(photos/plate1.jpg) no-repeat center center/cover;
+    position: absolute;
+    bottom: 15px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+#home h1{
+    font-size: 40px;
+    background-color: black;
+    background-color: rgb(205 186 174);
+    border-radius: 10px;
+    border: 1px solid brown;
+}
+
+#quote{
+    font-style: italic;
+    margin-top: 50px;
+    font-size: 30px;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 550px;
+    color: brown;
+    background-color: darkgray;
+}
+
+/* Menu Section */
+
+#menu{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #dac6b9;
+}
+
+.item1{
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.item1 img{
+    height: 200px;
+    width: 200px;
+}
+
+
+.item_con0{
+   align-items: center;
+   border: 1px solid brown;
+   margin-top: 2px;
+}
+
+.item_con1{
+    text-align: center;
+}
+
+.item_con2{
+    text-align: center;
+   margin-top: 10px;
+   font-weight: 800;
+}
+
+
+.item_con3{
+    margin-top: 15px;
+}
+
+.btn{
+    background-color: brown;
+    color: black;
+    border: 2px solid black;
+    border-radius: 4px;
+    padding: 4px;
+}
+
+
+h1{
+    /* margin-left: 600px; */
+    text-align: center;
+    background-color: rgb(179 201 143);
+    border: 2px solid black;
+}
+
+/* About Us */
+#about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h3{
+    /* background-color: rgb(179 201 143); */
+    text-align: center;
+    font-size: 40px;
+    padding: 4px;
+    background-color: rgb(179 201 143);
+    opacity: 0.9;
+}
+
+
+#about::before{
+    content: "";
+    background: url(photos/plate.jpg) no-repeat center center/cover;
+    position: absolute;
+    /* background-size: auto; */
+    height: 100%;
+    width: 100%;
+    background-position:bottom;
+    z-index: -2;
+    opacity: 0.85;
+}
+
+#about h2{
+    margin-top: 40px;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    font-size: 50px;
+    font-style: italic;
+    font-family:cursive;
+    border: 2px solid brown;
+    border-radius: 40px;
+    background-color: #dac6b9;
+    padding: 8px;
+}
+
+/* Contact Us */
+
+#contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+#contact h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+    background-color: rgb(179 201 143);
+    opacity: 0.9;
+}
+
+.form_det{
+    font-weight: bold;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.form_det input{
+    width: 100%;
+    border-radius: 2px;
+    padding: 8px;
+}
+
+.form_det textarea{
+    font-size: 1.1rem;
+    width: 100%;
+    padding: 0.5rem;
+}
+
+#contact::before{
+    content: "";
+    background: url(photos/contact.jpg) no-repeat center center/cover;
+    position: absolute;
+    /* background-size: auto; */
+    height: 100%;
+    width: 100%;
+    background-position:bottom;
+    z-index: -2;
+    opacity: 0.85;
+}
+
+/* Footer */
+footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+}
